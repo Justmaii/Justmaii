@@ -3,7 +3,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=justmaii&label=Profile%20views&color=0e75b6&style=flat" alt="justmaii" /> </p>
 
-- 🌱 I’m currently learning **Typesscript,javascript,react**
+- 🌱 I’m currently learning **swift,SwiftUİ,javascript,react**
 
 - 📫 How to reach me **dudukcuefe8@gmail.com**
 
