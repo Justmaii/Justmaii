@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Mai Ddkc</h1>
-<h3 align="center">A passionate mobile developer from Turkiye</h3>
+<h3 align="center">A passionate Backend developer from Turkiye</h3>
 
-- 🌱 I’m currently learning **Flutter,React,Swift**
+- 🌱 I’m currently learning **Java,React,C#**
 
 - 📫 How to reach me **dudukcuefe8@gmail.com**
 
