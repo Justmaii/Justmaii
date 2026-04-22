@@ -1,0 +1,78 @@
+name: Update Recent Repos
+
+on:
+  workflow_dispatch:  # Sadece manuel tetikleme
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Update README with recent repos
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            // Son 5 repoyu çek (fork'lar dahil, son güncellenene göre)
+            const { data: repos } = await github.rest.repos.listForUser({
+              username: 'Justmaii',
+              sort: 'updated',
+              per_page: 5,
+            });
+
+            // Her repo için: isim + açıklama + dil
+            const rows = repos.map(repo => {
+              const name = `[${repo.name}](${repo.html_url})`;
+              const desc = repo.description ? repo.description : '_No description_';
+              const lang = repo.language ? repo.language : '—';
+              const forkBadge = repo.fork ? ' 🍴' : '';
+              return `| ${name}${forkBadge} | ${desc} | \`${lang}\` |`;
+            });
+
+            const table = [
+              '| Repo | Description | Language |',
+              '| --- | --- | --- |',
+              ...rows,
+            ].join('\n');
+
+            const startMarker = '<!-- RECENT_REPOS:START -->';
+            const endMarker = '<!-- RECENT_REPOS:END -->';
+            const readmePath = 'README.md';
+            let readme = fs.readFileSync(readmePath, 'utf8');
+
+            const startIdx = readme.indexOf(startMarker);
+            const endIdx = readme.indexOf(endMarker);
+
+            if (startIdx === -1 || endIdx === -1) {
+              core.setFailed('README markers not found');
+              return;
+            }
+
+            const before = readme.slice(0, startIdx + startMarker.length);
+            const after = readme.slice(endIdx);
+            const newReadme = `${before}\n${table}\n${after}`;
+
+            if (newReadme !== readme) {
+              fs.writeFileSync(readmePath, newReadme);
+              console.log('README updated');
+            } else {
+              console.log('No changes');
+            }
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update recent repos"
+            git push
+          fi
