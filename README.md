@@ -1,7 +1,9 @@
 <h1 align="center">Hey, I'm Mai 👋</h1>
 
+<p align="center"><b>IT Student & Backend-focused Developer</b></p>
+
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=38BDF8&center=true&vCenter=true&width=600&lines=IT+Student+%F0%9F%8E%93;Web+Developer+%F0%9F%8C%90;Learning+C%23+%26+TypeScript;itobot+%236038+Robotics+Team+Member+%F0%9F%A4%96" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=38BDF8&center=true&vCenter=true&width=600&lines=IT+Student+%F0%9F%8E%93;Backend+Developer+%E2%9A%99%EF%B8%8F;Learning+C%23+%26+Java;itobot+%236038+Software+%F0%9F%A4%96" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -15,11 +17,11 @@
 
 ## 🇹🇷 Merhaba!
 
-Ben Mai, **IT öğrencisi** ve web geliştirmeyle ilgilenen biriyim. Şu sıralar **C#** ve **TypeScript** öğreniyorum, **itobot FRC #6038** takımının bir üyesiyim 🤖 Takım için web siteleri ve scouting araçları yazmaya çalışıyorum, bu arada kendi küçük projelerimle de (Python scriptleri, banyo sayacı gibi minik şeyler) uğraşıyorum. Kod yazmadığım zamanlarda yeni bir şeyler öğrenmeye çalışıyor olurum.
+Ben Mai, **IT öğrencisiyim** ve backend geliştirmeye odaklıyım. Şu sıralar backend için **C#**, FRC için **Java** öğreniyorum. **itobot FRC #6038** takımında yazılımcıyım 🤖 — takım için Java ile kod yazıyorum, web tarafına da bakıyorum.
 
 ## 🇬🇧 Hello!
 
-I'm Mai, an **IT student** interested in web development. Currently learning **C#** and **TypeScript**, and I'm a member of the **itobot FRC #6038** robotics team 🤖 I work on team websites and scouting tools, and tinker with my own small projects on the side (Python scripts, a bathroom counter app, random experiments). When I'm not coding, I'm probably learning something new.
+I'm Mai, an **IT student** focused on backend development. Currently learning **C#** for backend and **Java** for FRC. I'm a software member of **itobot FRC #6038** 🤖 — writing Java for the team and also working on the web side.
 
 ---
 
@@ -28,11 +30,12 @@ I'm Mai, an **IT student** interested in web development. Currently learning **C
 ### Currently Learning / Şu An Öğrendiklerim
 <p>
   <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
 </p>
 
 ### Languages / Diller
 <p>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
@@ -48,13 +51,11 @@ I'm Mai, an **IT student** interested in web development. Currently learning **C
 
 ---
 
-## 🤖 What I'm Working On / Üzerinde Çalıştıklarım
+## 📌 Recent Repositories / Son Repolarım
 
-- 🌐 **[itobot-website](https://github.com/Justmaii/itobot-website)** — itobot #6038 takım websitesi
-- 📋 **[itobot-scouting](https://github.com/Justmaii/itobot-scouting)** — Scouting tool for FRC competitions (TypeScript)
-- 🌍 **[team6038-web](https://github.com/Justmaii/team6038-web)** — Team 6038 web project (TypeScript)
-- 🐍 **[phyton-pro](https://github.com/Justmaii/phyton-pro)** — Python experiments
-- ⏲️ **[banyo-sayac](https://github.com/Justmaii/banyo-sayac-)** — Banyo sayacı mini projesi
+<!-- RECENT_REPOS:START -->
+<!-- Bu bölüm GitHub Actions tarafından otomatik güncellenir. Tetiklemek için Actions sekmesinden "Update Recent Repos" workflow'unu çalıştır. -->
+<!-- RECENT_REPOS:END -->
 
 ---
 
