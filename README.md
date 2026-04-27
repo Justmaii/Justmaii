@@ -57,10 +57,10 @@ I'm Mai, an **IT student** focused on backend development. Currently learning **
 | Repo | Description | Language |
 | --- | --- | --- |
 | [Justmaii](https://github.com/Justmaii/Justmaii) | _No description_ | `—` |
+| [Efcore](https://github.com/Justmaii/Efcore) | efcore ogrenmek | `C#` |
 | [mini-stackoverflow](https://github.com/Justmaii/mini-stackoverflow) | _No description_ | `C#` |
 | [maiaihosting](https://github.com/Justmaii/maiaihosting) | bla | `—` |
 | [T-6038-full](https://github.com/Justmaii/T-6038-full) 🍴 | _No description_ | `—` |
-| [frcapp](https://github.com/Justmaii/frcapp) | frc app by mai | `Swift` |
 <!-- RECENT_REPOS:END -->
 
 ---
