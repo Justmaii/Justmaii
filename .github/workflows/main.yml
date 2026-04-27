@@ -2,6 +2,8 @@ name: Update Recent Repos
 
 on:
   workflow_dispatch:  # Sadece manuel tetikleme
+  schedule:
+    - cron: '0 * * * *' # İstersen her saat başı otomatik çalışması için bunu ekleyebilirsin
 
 permissions:
   contents: write
@@ -19,14 +21,13 @@ jobs:
           script: |
             const fs = require('fs');
 
-            // Son 5 repoyu çek (fork'lar dahil, son güncellenene göre)
+            // Son 5 repoyu çek
             const { data: repos } = await github.rest.repos.listForUser({
               username: 'Justmaii',
               sort: 'updated',
               per_page: 5,
             });
 
-            // Her repo için: isim + açıklama + dil
             const rows = repos.map(repo => {
               const name = `[${repo.name}](${repo.html_url})`;
               const desc = repo.description ? repo.description : '_No description_';
@@ -41,8 +42,8 @@ jobs:
               ...rows,
             ].join('\n');
 
-            const startMarker = '<!-- RECENT_REPOS:START -->';
-            const endMarker = '<!-- RECENT_REPOS:END -->';
+            const startMarker = '';
+            const endMarker = '';
             const readmePath = 'README.md';
             let readme = fs.readFileSync(readmePath, 'utf8');
 
@@ -65,10 +66,9 @@ jobs:
               console.log('No changes');
             }
 
-             - name: Commit and push if changed
-                run: |
-                  git config --global user.name "github-actions[bot]"
-                  git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-                  git add .
-                  # Eğer değişiklik yoksa hata vermeden çıkmasını sağlar:
-                  git diff --quiet && git diff --staged --quiet || (git commit -m "Update README with recent repos" && git push)
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update README with recent repos" && git push)
