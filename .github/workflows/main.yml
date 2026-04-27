@@ -1,9 +1,8 @@
 name: Update Recent Repos
-
 on:
-  workflow_dispatch:  # Sadece manuel tetikleme
+  workflow_dispatch:
   schedule:
-    - cron: '0 * * * *' # İstersen her saat başı otomatik çalışması için bunu ekleyebilirsin
+    - cron: '0 * * * *'
 
 permissions:
   contents: write
@@ -20,14 +19,13 @@ jobs:
         with:
           script: |
             const fs = require('fs');
-
-            // Son 5 repoyu çek
+            
             const { data: repos } = await github.rest.repos.listForUser({
               username: 'Justmaii',
               sort: 'updated',
               per_page: 5,
             });
-
+            
             const rows = repos.map(repo => {
               const name = `[${repo.name}](${repo.html_url})`;
               const desc = repo.description ? repo.description : '_No description_';
@@ -35,30 +33,30 @@ jobs:
               const forkBadge = repo.fork ? ' 🍴' : '';
               return `| ${name}${forkBadge} | ${desc} | \`${lang}\` |`;
             });
-
+            
             const table = [
               '| Repo | Description | Language |',
               '| --- | --- | --- |',
               ...rows,
             ].join('\n');
-
-            const startMarker = '';
-            const endMarker = '';
+            
+            const startMarker = '<!-- RECENT_REPOS:START -->';
+            const endMarker = '<!-- RECENT_REPOS:END -->';
             const readmePath = 'README.md';
+            
             let readme = fs.readFileSync(readmePath, 'utf8');
-
             const startIdx = readme.indexOf(startMarker);
             const endIdx = readme.indexOf(endMarker);
-
+            
             if (startIdx === -1 || endIdx === -1) {
               core.setFailed('README markers not found');
               return;
             }
-
+            
             const before = readme.slice(0, startIdx + startMarker.length);
             const after = readme.slice(endIdx);
             const newReadme = `${before}\n${table}\n${after}`;
-
+            
             if (newReadme !== readme) {
               fs.writeFileSync(readmePath, newReadme);
               console.log('README updated');
