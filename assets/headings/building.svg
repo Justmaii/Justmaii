@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="308" height="54" viewBox="0 0 308 54">
+<style>
+  text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; white-space: pre; }
+  .cur { animation: blink 1.1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+</style>
+<rect x="0.5" y="0.5" width="307" height="53" rx="8" fill="#0d1117" stroke="#30363d"/>
+<text x="24" y="33" font-size="18"><tspan fill="#3fb950">mai</tspan><tspan fill="#3fb950">@mbp </tspan><tspan fill="#58a6ff">~ </tspan><tspan fill="#c9d1d9">$ </tspan><tspan fill="#c9d1d9">ls ~/engines</tspan></text>
+</svg>
