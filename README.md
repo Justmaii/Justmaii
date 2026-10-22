@@ -44,16 +44,24 @@ So I write my own chess engine, measure it, and rewrite it until the numbers go 
   </tr>
 </table>
 
-<sub>Also: <a href="https://github.com/Justmaii/mini-stackoverflow">mini-stackoverflow</a>, a small Q&amp;A site I built to learn ASP.NET and EF Core.</sub>
+<sub>Also: <a href="https://github.com/Justmaii/MaiAnaliz">MaiAnaliz</a>, a chess.com-style game review (brilliant, blunder, accuracy) in C# powered by MaiEngine,<br />
+and <a href="https://github.com/Justmaii/mini-stackoverflow">mini-stackoverflow</a>, a small Q&amp;A site I built to learn ASP.NET and EF Core.</sub>
 
 <br /><br />
 
 <h3><img src="./assets/headings/languages.svg" alt="Languages I write" height="54" /></h3>
 
-<img alt="C++" src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
 <img alt="C#" src="https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
-<img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img alt="C++" src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
 <img alt="SQL" src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=databricks&logoColor=white" />
+
+<br /><br />
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Justmaii&layout=compact&langs_count=6&hide=html,css,shell,makefile,dockerfile&theme=github_dark&hide_border=true&title_color=58A6FF" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Justmaii&layout=compact&langs_count=6&hide=html,css,shell,makefile,dockerfile&hide_border=true" />
+  <img alt="Top languages across my repositories" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Justmaii&layout=compact&langs_count=6&hide=html,css,shell,makefile,dockerfile&hide_border=true" />
+</picture>
 
 <br /><br />
 
@@ -64,7 +72,7 @@ So I write my own chess engine, measure it, and rewrite it until the numbers go 
 <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
 <img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />
 <img alt="macOS" src="https://img.shields.io/badge/macOS-000000?style=flat-square&logo=apple&logoColor=white" />
-<img alt="python-chess" src="https://img.shields.io/badge/python--chess-3776AB?style=flat-square&logo=python&logoColor=white" />
+<img alt="ASP.NET Core" src="https://img.shields.io/badge/ASP.NET_Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
 <img alt="Stockfish" src="https://img.shields.io/badge/tested_against-Stockfish-52514E?style=flat-square" />
 
 <br /><br />
